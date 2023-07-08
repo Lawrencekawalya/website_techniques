@@ -1,6 +1,8 @@
 <html>
   <head>
-    <title>Doc1</title>
+    <title>New techniques for web_programming</title>
+    <link rel="stylesheet" type="text/css" href="bob.css" />
+    <link rel="stylesheet" type="text/css" href="input.css" />
     <style>
       container {
         display: flex;
@@ -9,15 +11,29 @@
       }
       h1 {
         font-size: clamp(40px, 8vw, 105px);
+        color: aqua;
       }
     </style>
   </head>
-  <body>
+  <body bgcolor="black">
     <br /><br />
     <h1>Password below:</h1>
-    <container>
-      <input id="pass" type="password" />
-      <input id="check" type="checkbox" />
+
+    <br /><br />
+    <div class="container">
+      <div class="component">
+        <input
+          type="password"
+          placeholder="Write here you password..."
+          id="pass"
+          class="input"
+        />
+      </div>
+      <div class="component">
+        <font color="white">See password:</font>>
+        <input type="checkbox" id="check" class="input" />
+      </div>
+
       <script>
         check.onclick = togglepassword;
         function togglepassword() {
@@ -25,6 +41,24 @@
           else pass.type = "password";
         }
       </script>
-    </container>
+    </div>
+    <br />
+    <div class="flex-container">
+      <hr class="my-rule" />
+    </div>
+    <br />
+    <center>
+      <button class="btn" type="button">
+        <strong>Submit</strong>
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
+    </center>
   </body>
 </html>
