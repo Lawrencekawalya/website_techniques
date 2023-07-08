@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Doc1</title>
+    <style>
+      container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: clamp(40px, 8vw, 105px);
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+    <h1>Password below:</h1>
+    <container>
+      <input id="pass" type="password" />
+      <input id="check" type="checkbox" />
+      <script>
+        check.onclick = togglepassword;
+        function togglepassword() {
+          if (check.checked) pass.type = "text";
+          else pass.type = "password";
+        }
+      </script>
+    </container>
+  </body>
+</html>
